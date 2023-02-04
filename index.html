@@ -11,8 +11,8 @@
         <p>Por favor preencha os campos abaixo e escolha o curso desejado:</p>
         <form method="post" action="" >
             <fieldset>
-                <label for="first-name">Digite seu Primeiro Nome: <input type="text" id="first-name" required></label>
-                <label for="last-name">Digite seu Último Nome: <input type="text" name="text" id="last-name" required></label>
+                <label for="first-name">Digite seu Primeiro Nome: <input type="text" id="first-name" name="first-name" required></label>
+                <label for="last-name">Digite seu Último Nome: <input type="text" name="last-name" id="last-name" required></label>
                 <label for="email">Digite seu email: <input type="email" name="email" id="email" required></label>
                 <label for="phone"> Digite seu telefone:<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></label>
             </fieldset>
@@ -20,20 +20,20 @@
                 <label for="beginner"><input id="beginner" type="radio" name="account-type"> Iniciante</label>
                 <label for="musical-knowledge">
                 <input id="musical-knowledge" type="radio" name="account-type"> Já tenho um conhecimento musical</label>
-                <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required> Eu aceito os termos e condições</label>
+                <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" name="terms-and-conditions" required> Eu aceito os termos e condições</label>
             </fieldset>
             <fieldset>
                 <label for="avatar"> Adicione sua foto: <input id="avatar" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" /></label>
-                <label for="age">Digite sua idade: <input id="age" type="number" min="13" max="120"></label>
+                <label for="age">Digite sua idade: <input id="age" type="number" min="13" max="120" name="age"></label>
                 <label for="teacher"> Escolha seu professor:
-                    <select  id="teacher">
+                    <select name="teacher"  id="teacher">
                         <option value="">(escolha uma opção)</option>
                         <option value="teacher1">Rosane de Sousa</option>
                         <option value="teacher2">Wesley de Sousa Sampaio</option>
                     </select>
                 </label>
                 <label for="curse"> Escolha seu curso:
-                    <select id="curse">  
+                    <select name="curse" id="curse">  
                         <option value="choise-one-option">(escolha uma opção:)</option>
                         <option value="violin">Violino</option>
                         <option value="piano">Teclado</option>
@@ -43,7 +43,7 @@
                     </select>    
                 </label>
                 <label for="time-program"> Escolha o dia e hora:
-                    <select id="time-program">
+                    <select name="time-program" id="time-program">
                         <option value="monday">Segunda-feira</option>
                         <option value="tuesday">Terça-feira</option>
                         <option value="wednesday">Quarta-feira</option>
