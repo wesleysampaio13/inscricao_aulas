@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Inscrição</title>
 <body>
-    <div>
+    <div class="background">
         <main>
         <h1>Formulário de Registro</h1>
         <p>Por favor preencha os campos abaixo e escolha o curso desejado:</p>
@@ -17,10 +17,9 @@
                 <label for="phone"> Digite seu telefone:<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></label>
             </fieldset>
             <fieldset>
-                <label for="beginner"><input id="beginner" type="radio" name="account-type"> Iniciante</label>
-                <label for="musical-knowledge">
-                <input id="musical-knowledge" type="radio" name="account-type"> Já tenho um conhecimento musical</label>
-                <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" name="terms-and-conditions" required> Eu aceito os termos e condições</label>
+                <label for="beginner"><input class="inline" id="beginner" type="radio" name="account-type"> Iniciante</label>
+                <label for="musical-knowledge"><input class="inline" id="musical-knowledge" type="radio" name="account-type"> Já tenho um conhecimento musical</label>
+                <label for="terms-and-conditions"><input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" required> Eu aceito os termos e condições</label>
             </fieldset>
             <fieldset>
                 <label for="avatar"> Adicione sua foto: <input id="avatar" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" /></label>
@@ -51,7 +50,7 @@
                         <option value="friday">Sexta-feira</option>
                         <option value="saturday">Sábado</option>
                         <label for="appt">
-                            <input type="time" id="appt" name="appt" min="13:00" max="19:00" required>  
+                            <input class="appt" type="time" id="appt" name="appt" min="00:00" max="24:00" required>  
                         </label>                        
                     </select>
                 </label>
