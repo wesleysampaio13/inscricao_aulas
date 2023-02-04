@@ -5,6 +5,13 @@ body{
     margin: 0;
     background-color: #70587C;
     color: #FFFFFF;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, p{
+    text-align: center;
+    margin: 1em auto;
 }
 
 label{
