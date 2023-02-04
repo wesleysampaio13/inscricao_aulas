@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <meta name="viewport" content="width=device-device, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Musical</title>
+<body>
+    <div>
+        <main>
+        <h1>Formulário de Registro</h1>
+        <p>Por favor preencha os campos abaixo e escolha o curso desejado:</p>
+        <form method="post" action="" >
+            <fieldset>
+                <label for="first-name">Digite seu Primeiro Nome: <input type="text" id="first-name" required></label>
+                <label for="last-name">Digite seu Último Nome: <input type="text" id="last-name" required></label>
+                <label for="email">Digite seu email: <input type="email" id="email" required></label>
+                <label for="new-password">Criar nova senha: <input type="password" id="new-password" pattern="[a-z0-5]{8,}" required></label>
+            </fieldset>
+            <fieldset>
+                <label for="beginner"><input id="beginner" type="radio" name="account-type"> Iniciante</label>
+                <label for="musical-knowledge">
+                <input id="musical-knowledge" type="radio" name="account-type"> Já tenho um conhecimento musical</label>
+                <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required> Eu aceito os termos e condições</label>
+            </fieldset>
+            <fieldset>
+                <label for="avatar"> Adicione sua foto: <input id="avatar" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" /></label>
+                <label for="age">Digite sua idade: <input id="age" type="number" min="13" max="120"></label>
+                <label for="curse"> Escolha seu curso:
+                    <select id="curse">  
+                        <option value="choise-one-option">(escolha uma opção:)</option>
+                        <option value="violin">Violino</option>
+                        <option value="piano">Teclado</option>
+                        <option value="voice">Canto</option>
+                        <option value="guitar">Violão</option>
+                        <option value="flute">Flauta Transversal</option>
+                    </select>    
+                </label>
+                <label for="time-program"> Escolha o dia e hora:
+                    <select id="time-program">
+                        <option value="monday">Segunda-feira</option>
+                        <option value="tuesday">Terça-feira</option>
+                        <option value="wednesday">Quarta-feira</option>
+                        <option value="thursday">Quinta-feira</option>
+                        <option value="friday">Sexta-feira</option>
+                        <option value="saturday">Sábado</option>
+                        <label for="appt">
+                            <input type="time" id="appt" name="appt" min="13:00" max="19:00" required>  
+                        </label>                        
+                    </select>
+                </label>
+                <label for="bio"> Conte-nos um pouco sobre sua experiência musical: 
+                   <textarea name="" id="" cols="30" rows="3" placeholder="A melodia é a vida sensível da poesia... "></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+        </main>
+     </div>
+ </body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    background-image: url("./image/fundo_site_formulário.png");
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #70587C;
+    color: #FFFFFF;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
