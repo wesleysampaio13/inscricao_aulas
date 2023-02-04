@@ -63,6 +63,7 @@ input, textarea{
 input[type="submit"]{
     display: block;
     width: 30%;
+    margin: auto;
     height: 2em;
     font-size: 1.1rem;
     background-color: #0d1f2d;
