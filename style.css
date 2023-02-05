@@ -37,7 +37,7 @@ input, textarea, select{
 
 .inline{
     width: unset;
-    margin: 0 0 0 0;
+    margin: 0 0em 0 0;
 }
 
 input, textarea{
@@ -74,6 +74,10 @@ input[type="submit"]{
 h1, p{
     text-align: center;
     margin: 1em auto;
+}
+
+h1{
+    padding-top: 1em;
 }
 
 label{
