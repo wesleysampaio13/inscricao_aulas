@@ -48,6 +48,7 @@ input, textarea{
 }
 
 .background{
+    box-shadow: 5px 7px 10px 7px #0d1f2d;
     background-color: rgba(44, 103, 126, 0.5);
     border-radius: 10px 100px / 120px;
     margin: auto;
